@@ -1,0 +1,151 @@
+<!DOCTYPE htlm>
+<html>
+<head>
+  <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+	<title>Ethnos Coffee and Tea</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img scr="images/logo.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Products.html">PRODUCTS</a></li>
+                <li><a href="bulletin.html">BULLETIN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Products</h1>  
+</section>
+    
+ <!--------Products-------->
+    
+ <section class="tea">
+        <h1>Coffee and Tea</h1>
+        
+        <div class="row">
+        <div class="tea-col">
+            <img src="images/drink3.jpg">
+            <h3>Iced Nutella Latte</h3>
+            </div>
+        <div class="tea-col">
+            <img src="images/drink6.jpg">
+            <h3>Thai Classic Tea</h3>
+            </div>
+        <div class="tea-col">
+            <img src="images/drink1.jpg">
+            <h3>Pink Milk</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="tea-col">
+            <img src="images/drink2.jpg">
+            <h3>Thai Classic Matcha</h3>
+            </div>
+        <div class="tea-col">
+            <img src="images/drink4.jpg">
+            <h3>Classic Blueberry</h3>
+            </div>
+        <div class="tea-col">
+            <img src="images/drink5.jpg">
+            <h3>Oliang Iced Latte</h3>
+            </div>
+        </div>
+    </section>
+            
+ <!--------Order Now-------->
+ <div class="main">
+	<h1>Place Your Order Here!</h1>
+	<form action="javascript:void(0);">
+		<fieldset>
+		<legend><div class="number">1</div> Your Info:</legend>
+		<label for="name">Name:</label><br>
+	<input type="text" id="name" name="user_name"><br>
+		<label for="mail">Email:</label><br>
+	<input type="email" id="mail" name="user_email"><br>
+		<label for="phone">Phone:</label><br>
+	<input type="tel" id="phone" name="user_tel"><br>
+		<label for="address">Address:</label><br>
+		<textarea></textarea>
+	</fieldset>
+	<fieldset>
+		<legend><div class="number">2</div> Iced Nutella Latte</legend>
+		<input type="radio" id="medium" name="size"><label>M</label>
+		<input type="radio" id="large" name="size"><label>L</label><br>
+		
+	</fieldset>
+	<fieldset>
+		<legend><div class="number">3</div> Thai Classic Tea</legend>
+		<input type="radio" id="medium" name="size"><label>M</label>
+		<input type="radio" id="large" name="size"><label>L</label>
+	</fieldset>
+    <fieldset>
+		<legend><div class="number">3</div> Pink Milk  </legend>
+		<input type="radio" id="medium" name="size"><label>M</label>
+		<input type="radio" id="large" name="size"><label>L</label>
+	</fieldset>
+		<fieldset>
+			<legend><div class="number">4</div> Thai Classic Matcha</legend>
+		<input type="radio" id="medium" name="side"><label>M</label>
+		<input type="radio" id="large" name="side"><label>L</label><br>
+    </fieldset>
+	<fieldset>
+        <legend><div class="number">4</div> Classic Blueberry</legend>
+    <input type="radio" id="medium" name="side"><label>M</label>
+    <input type="radio" id="large" name="side"><label>L</label><br>
+        
+</fieldset>	
+	</fieldset>
+	<fieldset>
+        <legend><div class="number">4</div> Oliang Iced Latte</legend>
+    <input type="radio" id="medium" name="side"><label>M</label>
+    <input type="radio" id="large" name="side"><label>L</label><br>
+        
+</fieldset>
+<fieldset>
+	<legend><div class="number">6</div> Any Allergies/Special Requests:</legend>
+<textarea></textarea>
+</fieldset>
+<input class="button" type="submit" value="Place order" onclick="submitForm()">
+</form>
+<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=mpjfzqdn&n=n1.ratufa.io"></script>
+</div>
+    
+ <!--------Footer-------->
+    
+ <section class="footer">
+    <h4> About Us</h4>
+    <p>Ethnos is a Greek word that means ‘people’ or ‘nation.’ It is a missional platform with the aim of reaching unreached people groups, extending from the small shop to the 10/40 window and beyond.</p>
+    <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    </div>
+    <p></p>
+    </section>
+    
+    <!--------JavaScript for Toggle Menu-------->   
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right - "-200px";
+    }
+    
+    </script>  
+    
+    </body>
+	<html>
